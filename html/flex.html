@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 500px;
+            height: 500px;
+            border:1px solid black;
+            /* 넘어간거 가려줌 */
+            display: flex;
+            justify-content: center;
+            /* 가로로 기준 */
+            align-items: center;
+            /* align-items는 세로 기준 */
+            /* flex의 기본요소는 가로 */
+            flex-direction: row-reverse;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .innerBox{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* margin: 5px; */
+            /* inline요소는 길이와 높이를 주 수 없다 */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="innerBox">1</div>
+        <div class="innerBox">2</div>
+        <div class="innerBox">3</div>
+        <div class="innerBox">4</div>
+        <div class="innerBox">5</div>
+        <div class="innerBox">6</div>
+        <div class="innerBox">7</div>
+    </div>
+</body>
+</html>
